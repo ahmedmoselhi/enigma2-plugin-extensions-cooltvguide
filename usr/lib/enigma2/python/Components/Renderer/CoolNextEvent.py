@@ -36,23 +36,18 @@ class CoolNextEvent(Renderer, VariableText):
                   -1,
                   -1)])
             if ivuxvt:
-                ivuxvt
                 jjxtlk = 0
                 for lskiiq in ivuxvt:
                     if jjxtlk > 0:
                         if lskiiq[4]:
-                            lskiiq[4]
                             uuprlo = localtime(lskiiq[1])
                             nozttm = nozttm + '%02d:%02d  %s\n' % (uuprlo[3], uuprlo[4], lskiiq[4])
                         else:
-                            lskiiq[4]
                             nozttm = nozttm + 'n/a\n'
                     jjxtlk += 1
                     if jjxtlk > 5:
                         break
                         continue
 
-            else:
-                ivuxvt
             self.text = nozttm
             return
