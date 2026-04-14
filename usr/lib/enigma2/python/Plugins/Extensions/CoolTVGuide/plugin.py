@@ -1,6 +1,4 @@
 # Embedded file name: /usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/plugin.py
-from __future__ import print_function
-from __future__ import absolute_import, division
 from Components.ActionMap import ActionMap, NumberActionMap
 from Components.Button import Button
 from Components.config import config, ConfigSet, ConfigClock, ConfigSubsection, ConfigYesNo, ConfigInteger, ConfigSelection, getConfigListEntry

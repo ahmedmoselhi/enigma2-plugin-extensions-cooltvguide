@@ -9,6 +9,9 @@ def localeInit():
     gettext.bindtextdomain('CoolTVGuide', resolveFilename(SCOPE_PLUGINS, 'Extensions/CoolTVGuide/locale'))
 
 
-_ = lambda txt: gettext.dgettext('CoolTVGuide', txt)
+def _(txt):
+    return gettext.dgettext('CoolTVGuide', txt)
+
+
 localeInit()
 language.addCallback(localeInit)

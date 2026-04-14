@@ -53,8 +53,10 @@ class CoolPico(Renderer):
             if not nlqmqs:
                 kklrrq = ServiceReference(qystrq).getServiceName()
                 try:
-                    kklrrq = kklrrq.replace('\xc2\x87', '').replace('\xc2\x86', '').decode('utf-8').encode('latin1')
-                except:
+                    if isinstance(kklrrq, bytes):
+                        kklrrq = kklrrq.decode('utf-8', errors='ignore')
+                    kklrrq = kklrrq.replace('\xc2\x87', '').replace('\xc2\x86', '')
+                except Exception:
                     pass
 
                 nlqmqs = findCoolPicon(kklrrq)
